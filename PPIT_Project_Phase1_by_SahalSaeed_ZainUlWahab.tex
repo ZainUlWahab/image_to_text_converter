@@ -66,11 +66,9 @@
     {\large Course: Principles and Practices of IT (PPIT)}\\[3cm]
     
     \begin{tabular}{l l}
-        \textbf{Student 1:} & Rameen Elahi \\
-        \textbf{Roll Number:} & 22i-0565 \\[0.5cm]
-        \textbf{Student 2:} & Sahal Saeed \\
+        \textbf{Student 1:} & Sahal Saeed \\
         \textbf{Roll Number:} & 22i-0476 \\[0.5cm]
-        \textbf{Student 3:} & Zain Ul Wahab \\
+        \textbf{Student 2:} & Zain Ul Wahab \\
         \textbf{Roll Number:} & 22i-0491 \\
     \end{tabular}
     
@@ -418,12 +416,38 @@ python main.py
 \end{lstlisting}
 
 \subsection{Cloud Deployment}
-The application can be deployed on Streamlit Cloud:
+
+\subsubsection{Hugging Face Spaces (Recommended)}
+The application is deployed on Hugging Face Spaces with \textbf{FREE GPU access}:
+\begin{itemize}[noitemsep]
+    \item \textbf{Platform:} Hugging Face Spaces
+    \item \textbf{URL:} \url{https://huggingface.co/spaces/YOUR_USERNAME/document-converter}
+    \item \textbf{Hardware:} NVIDIA T4 GPU (Free tier)
+    \item \textbf{Benefits:} 
+    \begin{itemize}
+        \item Free GPU acceleration (2-3s processing vs 30-60s on CPU)
+        \item 16GB RAM (sufficient for LightOnOCR model)
+        \item Auto-scaling for multiple users
+        \item Zero configuration deployment
+    \end{itemize}
+\end{itemize}
+
+\textbf{Deployment Steps:}
+\begin{enumerate}[noitemsep]
+    \item Create Space at \url{https://huggingface.co/spaces}
+    \item Select Streamlit SDK and T4 GPU hardware
+    \item Push code via Git: \texttt{git push hf main}
+    \item Space builds automatically (5-10 minutes)
+    \item App goes live with public URL
+\end{enumerate}
+
+\subsubsection{Alternative: Streamlit Cloud}
+Can also deploy on Streamlit Cloud (no GPU):
 \begin{enumerate}[noitemsep]
     \item Push code to GitHub repository
-    \item Sign up at https://share.streamlit.io
-    \item Deploy with main file: \texttt{src/streamlit\_app.py}
-    \item Note: GPU not available on free tier (slower processing)
+    \item Sign up at \url{https://share.streamlit.io}
+    \item Deploy with main file: \texttt{app.py}
+    \item Note: CPU-only (slower), 1GB RAM limit (may require model optimization)
 \end{enumerate}
 
 \newpage
@@ -497,7 +521,7 @@ This project demonstrates the practical application of AI/ML technologies to sol
 \addcontentsline{toc}{section}{Appendix A: Code Repository}
 
 \subsection*{GitHub Repository}
-Full source code is available at: \texttt{[Your GitHub Repository URL]}
+Full source code is available at: \url{https://github.com/ZainUlWahab/image_to_text_converter}
 
 \subsection*{Directory Structure}
 \begin{lstlisting}
