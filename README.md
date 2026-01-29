@@ -6,7 +6,6 @@ Transform images into editable Word documents with intelligent formatting preser
 ## Students
 | Name | Roll Number |
 |------|-------------|
-| Rameen Elahi | 22i-0565 |
 | Sahal Saeed | 22i-0476 |
 | Zain Ul Wahab | 22i-0491 |
 
