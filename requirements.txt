@@ -1,0 +1,17 @@
+# Deep Learning & Transformers
+torch>=2.0.0
+torchvision>=0.15.0
+git+https://github.com/huggingface/transformers
+accelerate>=0.20.0
+
+# Image Processing
+Pillow>=10.2.0
+opencv-python>=4.9.0
+numpy>=1.26.3
+
+# Document Generation
+python-docx>=1.1.0
+pandas>=2.2.0
+
+# Web UI
+streamlit>=1.31.0
