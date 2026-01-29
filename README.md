@@ -96,3 +96,6 @@ phase1/
 
 ## License
 MIT License
+
+## Deployed
+Link: https://zainulwahab-image-to-text-converter-srcstreamlit-app-qwj96t.streamlit.app/
